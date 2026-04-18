@@ -1,0 +1,145 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXFileReference section */
+		F47143F82F93B08D00BF5541 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		F47143F92F93B5E000BF5541 /* actions.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = actions.js; sourceTree = "<group>"; };
+		F47143FA2F93B5E000BF5541 /* palette.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = palette.css; sourceTree = "<group>"; };
+		F47144042F93B5E000BF5541 /* english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = english.json; sourceTree = "<group>"; };
+		F47144102F93B5E000BF5541 /* EnterDisplay-Signs.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EnterDisplay-Signs.woff"; sourceTree = "<group>"; };
+		F47144112F93B5E000BF5541 /* InterDisplay-ExtraLight.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterDisplay-ExtraLight.woff2"; sourceTree = "<group>"; };
+		F47144122F93B5E000BF5541 /* InterDisplay-Light.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterDisplay-Light.woff2"; sourceTree = "<group>"; };
+		F47144132F93B5E000BF5541 /* InterDisplay-Medium.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterDisplay-Medium.woff2"; sourceTree = "<group>"; };
+		F47144142F93B5E000BF5541 /* InterDisplay-Regular.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterDisplay-Regular.woff2"; sourceTree = "<group>"; };
+		F47144152F93B5E000BF5541 /* InterDisplay-SemiBold.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterDisplay-SemiBold.woff2"; sourceTree = "<group>"; };
+		F47144162F93B5E000BF5541 /* letters.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = letters.css; sourceTree = "<group>"; };
+		F47144172F93B5E000BF5541 /* signs.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = signs.css; sourceTree = "<group>"; };
+		F471441A2F93B5E000BF5541 /* actions.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = actions.js; sourceTree = "<group>"; };
+		F471441B2F93B5E000BF5541 /* columns.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = columns.css; sourceTree = "<group>"; };
+		F471441C2F93B5E000BF5541 /* figures.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = figures.css; sourceTree = "<group>"; };
+		F471441D2F93B5E000BF5541 /* rows.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = rows.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		F47143FC2F93B5E000BF5541 /* colors */ = {
+			isa = PBXGroup;
+			children = (
+				F47143F92F93B5E000BF5541 /* actions.js */,
+				F47143FA2F93B5E000BF5541 /* palette.css */,
+			);
+			path = colors;
+			sourceTree = "<group>";
+		};
+		F47144082F93B5E000BF5541 /* languages */ = {
+			isa = PBXGroup;
+			children = (
+				F47144042F93B5E000BF5541 /* english.json */,
+			);
+			path = languages;
+			sourceTree = "<group>";
+		};
+		F47144192F93B5E000BF5541 /* strings */ = {
+			isa = PBXGroup;
+			children = (
+				F47144162F93B5E000BF5541 /* letters.css */,
+				F47144112F93B5E000BF5541 /* InterDisplay-ExtraLight.woff2 */,
+				F47144122F93B5E000BF5541 /* InterDisplay-Light.woff2 */,
+				F47144132F93B5E000BF5541 /* InterDisplay-Medium.woff2 */,
+				F47144142F93B5E000BF5541 /* InterDisplay-Regular.woff2 */,
+				F47144152F93B5E000BF5541 /* InterDisplay-SemiBold.woff2 */,
+				F47144172F93B5E000BF5541 /* signs.css */,
+				F47144102F93B5E000BF5541 /* EnterDisplay-Signs.woff */,
+			);
+			path = strings;
+			sourceTree = "<group>";
+		};
+		F471441E2F93B5E000BF5541 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F471441A2F93B5E000BF5541 /* actions.js */,
+				F471441B2F93B5E000BF5541 /* columns.css */,
+				F471441C2F93B5E000BF5541 /* figures.css */,
+				F471441D2F93B5E000BF5541 /* rows.css */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F47144202F93B5E000BF5541 /* east */ = {
+			isa = PBXGroup;
+			children = (
+				F47143FC2F93B5E000BF5541 /* colors */,
+				F47144192F93B5E000BF5541 /* strings */,
+				F471441E2F93B5E000BF5541 /* view */,
+				F47144082F93B5E000BF5541 /* languages */,
+			);
+			path = east;
+			sourceTree = "<group>";
+		};
+		F49842CF2F93AFF200A6D60A = {
+			isa = PBXGroup;
+			children = (
+				F47143F82F93B08D00BF5541 /* index.html */,
+				F47144202F93B5E000BF5541 /* east */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		F49842D02F93AFF200A6D60A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2640;
+			};
+			buildConfigurationList = F49842D32F93AFF200A6D60A /* Build configuration list for PBXProject "hummer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F49842CF2F93AFF200A6D60A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		F49842D42F93AFF200A6D60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F49842D52F93AFF200A6D60A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F49842D32F93AFF200A6D60A /* Build configuration list for PBXProject "hummer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49842D42F93AFF200A6D60A /* Debug */,
+				F49842D52F93AFF200A6D60A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F49842D02F93AFF200A6D60A /* Project object */;
+}

@@ -1,0 +1,15 @@
+
+/* Расположение: /Users/home/Documents/firma/east/strings/signs.css */
+
+/* Цвета */
+@import url("../colors/palette.css");
+
+
+/* Подключение шрифтов */
+@font-face {
+    font-family: "EnterDisplay";
+    src: url("EnterDisplay-Signs.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
