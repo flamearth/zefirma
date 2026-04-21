@@ -2,6 +2,9 @@
 
 {
 
-    "name": "Leader"
+    "name": "Deals",
+    "Description": "Description",
+    
+    "message": "Deals",
     
 }
