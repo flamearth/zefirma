@@ -12,7 +12,7 @@
     <!-- Лицо: Маленькое -->
     <link
         rel="icon"
-        href="pics/small.png">
+        href="../pics/small.png">
     <!-- Веб Сайт -->
     <meta
         property="og:type"
@@ -20,7 +20,7 @@
     <!-- Объяснение -->
     <meta
         name="description"
-        content="Description">
+        content="Create or log in tour personal account">
     <!-- Обёртка -->
     <meta
         property="og:image"
@@ -28,7 +28,7 @@
     <!-- Ссылка -->
     <meta
         property="og:url"
-        content="https://name.name/">
+        content="https://name.name/services/entrance.html">
     <!-- Адаптация -->
     <meta
         name="viewport"
@@ -118,14 +118,14 @@
             z-index: 1; }
         .one {
             width: 100%;
-            height: auto;
+            height: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-top: 80px;
+            align-items: flex-start;
+            justify-content: stretch;
+            padding-top: 2px;
             padding-right: 20px;
-            padding-bottom: 80px;
+            padding-bottom: 2px;
             padding-left: 20px;
             gap: 20px; }
         .button {
@@ -149,97 +149,57 @@
                 backdrop-filter: blur(10px);
                 background: var(--0010); }
     </style>
-    <script>
-        // применить тему при загрузке
-        (function () {
-            const saved = localStorage.getItem('view');
-            if (saved) {
-                document.documentElement.setAttribute('view', saved);
-            } else {
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                document.documentElement.setAttribute('view', prefersDark ? 'dark' : 'light'); }
-        // следить за сменой темы устройства
-        const media = window.matchMedia('(prefers-color-scheme: dark)');
-            media.addEventListener('change', (e) => {
-                 if (!localStorage.getItem('view')) {
-                document.documentElement.setAttribute('view', e.matches ? 'dark' : 'light'); }
-            });
-        })();
-    </script>
 </head>
 <body>
     <!-- Верх -->
     <div
          class="space-between">
-            <!-- Первый бутон -->
-            <a
-                href="https://www.behance.net/rikhardflame"
-                target="_blank"
-                class="button"
-                style="
-                    height: 40px;
-                    width: 40px;
-                    font-size: 18px;">
-                I'm</a>
-            <!-- Название -->
-            <h1
-                style="
-                    font-size: 18px;
-                    font-weight: 500;">
-                Ведение дел
-                </h1>
-            <!-- Второй бутон -->
+            <!-- Вернутся -->
             <div
                 class="button"
                 style="
                     height: 40px;
                     width: 40px;"
                 onclick="
-                    const d = document.documentElement;
-                    const isLight = d.getAttribute('view') === 'light';
-                    const newView = isLight ? 'dark' : 'light';
-                    d.setAttribute('view', newView);
-                    localStorage.setItem('view', newView);
-                    this.innerText = isLight ? '☽' : '☀︎';
-                    ">☽
+                    history.back()"
+                    >←
                 </div>
+            <!-- Название -->
+            <h1
+                style="
+                    font-size: 18px;
+                    font-weight: 500;">
+                Вход
+                </h1>
+            <!-- Продолжить -->
+            <a
+                href="services/account.html"
+                target="_blank"
+                class="button"
+                style="
+                    height: 40px;
+                    width: 40px;
+                    font-size: 21px;">
+                ✔︎</a>
             </div>
-    <!-- № Сообщения -->
+    <!-- Поток -->
     <div
         class="one"
         style="
-            margin-top: 76px;
-            font-size: 48px;">
+            margin-top: 76px;">
         <div
+            class="one"
             style="
                 border-radius: 28px;
-                 overflow: hidden;
-                height: 96px;
-                width: 96px;">
-                <img
-                    src="pics/large.png"
+                height: auto;
+                padding-top: 16px;
+                padding-right: 20px;
+                padding-bottom: 16px;
+                padding-left: 20px;
+                max-width: 400px;">
+                <input
+                     type="text"
+                     placeholder="inbox@mail.space">
                     style="
-                        width: 100%;
-                        display: block;"></div>
-        <!-- Сообщение -->
-        <h1
-            style="
-                max-width: 720px;
-                text-align: center;
-                font-weight: 300;
-                font-size: 48px;">
-            Начни вести дела без оплаты уже сейчас!</h1>
-        <!-- Бутон -->
-        <a
-            href="services/enter.html"
-            target="_blank"
-            class="button"
-            style="
-                font-size: 18px;
-                padding-top: 9px;
-                padding-right: 18px;
-                padding-bottom: 9px;
-                padding-left: 18px;"
-            >Войти</a>
-        <div
+                </div>
 </body>
