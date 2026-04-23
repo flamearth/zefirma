@@ -8,15 +8,19 @@
     <!-- Кодировки цветов -->
     <link
         rel="stylesheet"
-        href="../server/colors.css">
+        href="../../../sourse/colors.css">
     <!-- Лицо: Большое -->
     <link
         rel="apple-touch-icon"
-        href="pics/large.png">
+        href="../../../applications/deals/pics/large.png">
     <!-- Лицо: Маленькое -->
     <link
         rel="icon"
-        href="../pics/small.png">
+        href="../../../applications/deals/pics/small.png">
+    <!-- Местофикация -->
+    <script
+        src="../../../localization/action.js">
+        </script>
     <!-- Веб Сайт -->
     <meta
         property="og:type"
@@ -134,10 +138,11 @@
                 </div>
             <!-- Название -->
             <h1
+                data-vocabulary="entrance.title"
                 style="
                     font-size: 18px;
-                    font-weight: 500;">
-                Вход
+                    font-weight: 500;"
+                >Вход
                 </h1>
             <!-- Продолжить -->
             <a
@@ -181,6 +186,7 @@
                 -moz-appearance: none;
              type="text"
              placeholder="inbox@mail.space">
+            </input>
         <!-- Черта -->
         <div
             style="
@@ -201,7 +207,8 @@
                 -webkit-appearance: none;
                 -moz-appearance: none;
              type="text"
-             placeholder="key">
+             placeholder="• • • • • • • • • • •">
+            </input>
         <!-- Черта -->
         <div
             style="
@@ -210,6 +217,7 @@
                 background: var(--80810);"></div>
         <!-- Уведомление -->
         <p
+            data-vocabulary="entrance.notify"
             style="
                 font-size: 18px;
                 text-align: center;
@@ -220,6 +228,7 @@
             </p>
         </div>
         <p
+            data-vocabulary="entrance.agreement"
             style="
                 width: 100%;
                 font-size: 18px;
@@ -231,14 +240,15 @@
                 padding-right: 20px;
                 padding-left: 20px;
                 max-width: 400px;
-                color: var(--80865);">
-            Продолжая, вы подтверждаете, что вам есть 13 лет и принимаете
+                color: var(--80865);"
+            >Продолжая, вы подтверждаете, что вам есть 13 лет и принимаете
             <a
+                data-vocabulary="entrance.documents"
                 href="documents.html"
                 style="
                     text-decoration: underline;
-                    color:inherit;">
-                Условия использования и Политику конфиденциальности
+                    color:inherit;"
+                >Условия использования и Политику конфиденциальности
                 </a>
             </p>
 </body>
