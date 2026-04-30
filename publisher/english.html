@@ -2,52 +2,47 @@
 <html>
     <head>
         <title
-            >Deals
+            >Publisher
             </title>
         <!-- Кодировка языка -->
         <meta
             charset=
                 "utf-8"
             >
-        <!-- Лицо: Большое -->
-        <link
-            rel=
-                "apple-touch-icon"
-            href=
-                "applications/deals/content/large.png"
-            >
         <!-- Лицо: Маленькое -->
         <link
             rel=
                 "icon"
             href=
-                "applications/deals/content/small.png"
+                "../content/small.png"
             >
         <!-- Тип -->
         <meta
-            property="og:type"
-            content="website"
+            property=
+                "og:type"
+            content=
+                "website"
             >
         <!-- Объяснение -->
         <meta
             property=
                 "og:description"
             content=
-                "Let's start counting and leading your usual deals now and get your profit immediately."
+                "Modern solutions for the growth of your business."
             >
         <!-- Обёртка -->
         <meta
             property=
                 "og:image"
             content=
-                "https://flamearth.github.io/thephyrmafront/applications/deals/content/preview.png"
+                "https://thephyrma.com/publisher/content/preview.png"
             >
         <!-- Ссылка -->
         <meta
             property=
                 "og:url"
             content=
-                "https://flamearth.github.io/thephyrmafront/"
+                "https://thephyrma.com/publisher/english.html"
             >
         <!-- Адаптация -->
         <meta
@@ -60,7 +55,7 @@
             :root
                  {
                 /* 100% */
-                --1111: #2c2c2c;
+                --1111: #000000;
                 --9191: #FFFFFF;
                 /* 85% */
                 --11185: #000000D9;
@@ -75,12 +70,14 @@
                 --11110: #0000001A;
                 --91910: #FFFFFF1A;
                 /* 0% */
-                --1110: #2c2c2c00;
+                --1110: #00000000;
                 --9190: #FFFFFF00;
                 }
             *
                 {
                 box-sizing: border-box;
+                margin: 0;
+                padding: 0;
                 }
             a
                 {
@@ -191,7 +188,7 @@
                     </h1>
                 <!-- Продолжить -->
                 <a
-                    href="?/?.html"
+                    href="pages/languages.html"
                     class="button"
                     style=
                         "
@@ -199,75 +196,107 @@
                         width: 40px;
                         font-size: 21px;
                         "
-                    >?
+                    >EN
                     </a>
                 </div>
         <!-- Ряд -->
         <div
             style=
                 "
-                width: 100%;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: stretch;
                  
                 display: flex;
                  
                 margin-top: 78px;
+                margin-botom: 78px;
                  
-                gap: 20px;
+                gap: 0px;
                  
-                padding-left: 20px;
-                padding-right: 20px;
-                 
-                padding-top: 80px;
-                padding-bottom: 80px;
-                 
-                flex-direction: column;
-                justify-content: center;
-                align-items: center; 
                 "
             >
+                <!-- О издателе  -->
+                <div
+                    style=
+                        "
+                        max-height: 720px;
+                         
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: stretch;
+                         
+                        padding-top: 80px;
+                        padding-right: 20px;
+                        padding-bottom: 80px;
+                        padding-left: 20px;
+                         
+                        gap: 10px;
+                        "
+                    >
+                        <h1
+                            style=
+                                "
+                                 
+                                font-family: serif;
+                                font-style: italic;
+                                font-size: 21px;
+                                font-weight: 300;
+                                text-align: center;
+                                 
+                                color: var(--91965);
+                                "
+                            >Modern solutions for the growth of your business
+                            </h1>
+                        <h2
+                            style=
+                                "
+                                max-width: 720px;
+                                 
+                                font-size: 40px;
+                                font-weight: 300;
+                                text-align: center;
+                                 
+                                color: var(--9191);
+                                "
+                            >Applications for gaining a better experience from working in your own field
+                            </h2>
+                    </div>
                 <!-- Изображение -->
                 <div
                     style=
                         "
-                        height: 96px;
-                        width: 96px;
+                        width: 100%;
                          
-                        display: flex;
                         flex-direction: column;
                          
-                        border-radius: 28px;
+                        padding-top: 80px;
+                        padding-right: 10px;
+                        padding-bottom: 80px;
+                        padding-left: 10px;
+                         
                         overflow: hidden;
                         "
                     >
                         <img
-                            src="large.png"
+                            src="content/first.png"
                             style=
                                 "
                                 width: 100%;
-                                display: block;
+                                max-width: 720px;
+                                height: 360px;
+                                 
+                                object-fit: cover;
+                                 
+                                border-radius: 32px;
                                 "
                             >
-                        </div>
-                <!-- Имя -->
-                <h1
-                    style=
-                        "
-                        max-width: 720px;
-                         
-                        font-size: 48px;
-                        font-weight: 300;
-                        text-align: center;
-                         
-                        margin: 0;
-                        padding: 0;
-                         
-                        color: var(--9191);
-                        "
-                    > Let's get start leading your deals without payment!
-                    </h1>
-                <!-- Войти -->
+                    </div>
+                <!-- Миссия  -->
+                <!-- Исходные данные -->
                 <a
-                    href="services/entrance.html"
+                    href="brand/identity.html"
                     class="button"
                     style=
                         "
@@ -278,7 +307,8 @@
                         padding-bottom: 9px;
                         padding-left: 18px;
                         "
-                    >Begin
+                    >Get logotypes
                     </a>
+            </div>
         </body>
     </html>
