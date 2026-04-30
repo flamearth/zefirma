@@ -1,0 +1,38 @@
+{
+    
+  "name": "Deals",
+  
+  "short_name": "Deals",
+  
+  "description": "An application for counting and leading your daily deals.",
+  
+  "start_url": "entrance/entrance.html",
+  
+  "scope": "/",
+  
+  "display": "standalone",
+  
+  "background_color": "#000000",
+  "theme_color": "000000",
+  
+  "orientation": "portrait",
+
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+
+  "icons": [
+    {
+      "src": "/content/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/content/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
